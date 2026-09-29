@@ -1,7 +1,9 @@
 # in-class-activities
 ## Devlogs
 ### W1
-Write your W1 activity Devlog here.
+When the Camera of the Cat GameObject is moved off, the camera will no longer follow the Cat, it stays in place. This happens because GameObjects that are nested below another object in the hierarchy will move with that object.
+
+[My W1 activity on Itch.io](https://clay-k-dale.itch.io/cat)
 
 ### W2
 Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
