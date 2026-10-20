@@ -20,6 +20,12 @@ A2.
 methods is the resepy of a dish, the class is the food that's made, the member variables are the ingredients.
 A3.
 The ball color gets lighter because every time when the ball collide and bounced higher and further, it increses the GetColorMultiplier. The value of RGB color for the ball, ballRenderer.color, will increace and approche 1, which is white.
+
+### W4
+1. What solution did you come up with for the collider activity, and why? Specifically- which objects did you add Rigidbodies to, and which object(s) did you check Is Trigger on?
+We addrigidbody to the cat and the soccerBall since they will collide and need a physics simulations. The Goal don't need a Rigidbody because it only need to stay in the same place. We check Goal is Trigger because the ball need to get through the Goal to get poins.
+2. IF your game did not work perfectly the first time you tested it, talk about what you had to fix.
+I put an additionle .text after my timing variable, _time. I ifx it by remoing .text.
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
