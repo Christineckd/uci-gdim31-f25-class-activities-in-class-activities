@@ -55,7 +55,7 @@ public class SoccerBall : MonoBehaviour
         Debug.Log("SoccerBall detected a collision with a trigger collider!");
         _goalVFX.Play();
         _score++;
-        _pointsText.text = _pointsText.text + _score.ToString();
+        _pointsText.text =  _score.ToString();
         _time= 0.0f;
     }
     // Once you've created MadeGoal,

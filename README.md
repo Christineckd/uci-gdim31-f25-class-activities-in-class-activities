@@ -26,6 +26,10 @@ The ball color gets lighter because every time when the ball collide and bounced
 We addrigidbody to the cat and the soccerBall since they will collide and need a physics simulations. The Goal don't need a Rigidbody because it only need to stay in the same place. We check Goal is Trigger because the ball need to get through the Goal to get poins.
 2. IF your game did not work perfectly the first time you tested it, talk about what you had to fix.
 I put an additionle .text after my timing variable, _time. I ifx it by remoing .text.
+
+### W5
+1. My plan for DeerW5 is to use a public Transform variable named mushroomR to store a reference to the target's Transform. Then I will choose the target in the Inspector. I will use Start(), which Unity calls once when the component first becomes active, to get the NavMeshAgent component on the deer using GetComponent<NavMeshAgent>(). Then, I will call SetDestination(mushroomR.position) on that component to make the deer move toward the target's position.
+ 
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
