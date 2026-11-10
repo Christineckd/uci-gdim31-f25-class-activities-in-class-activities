@@ -30,6 +30,13 @@ I put an additionle .text after my timing variable, _time. I ifx it by remoing .
 ### W5
 1. My plan for DeerW5 is to use a public Transform variable named mushroomR to store a reference to the target's Transform. Then I will choose the target in the Inspector. I will use Start(), which Unity calls once when the component first becomes active, to get the NavMeshAgent component on the deer using GetComponent<NavMeshAgent>(). Then, I will call SetDestination(mushroomR.position) on that component to make the deer move toward the target's position.
  
+### W7
+ https://docs.google.com/document/d/1DUb0ZVZJBBIqPJSFtK6_nH29tdpE0G2-kc8Innu8HuY/edit?tab=t.0
+1. The script needs two more member veriables; _speed for how fast the bat moves and _playerTransform for the cat’s Transform. I’ll use [SerializeField] so I can set both in the Inspector.
+
+2. I’ll usecUpdate() movement and write two public methods to contrle when the bat shoyld stop or start chasing.
+
+3. While the script is enabled, Update() uses Vector3.MoveTowards() to move the bat toward the cat’s current position each frame. Chase() sets enabled to true so the bat starts chasing, and Notchase() sets it to false so the bat stops chasing.
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
