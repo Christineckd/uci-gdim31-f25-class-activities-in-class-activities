@@ -37,6 +37,9 @@ I put an additionle .text after my timing variable, _time. I ifx it by remoing .
 2. I’ll usecUpdate() movement and write two public methods to contrle when the bat shoyld stop or start chasing.
 
 3. While the script is enabled, Update() uses Vector3.MoveTowards() to move the bat toward the cat’s current position each frame. Chase() sets enabled to true so the bat starts chasing, and Notchase() sets it to false so the bat stops chasing.
+
+### W8
+1. In step2, instead of using transform. position, it should be Translate() because then the Muskrat can move smoothly.
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
