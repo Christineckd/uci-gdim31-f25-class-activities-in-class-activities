@@ -40,6 +40,10 @@ I put an additionle .text after my timing variable, _time. I ifx it by remoing .
 
 ### W8
 1. In step2, instead of using transform. position, it should be Translate() because then the Muskrat can move smoothly.
+
+### W9
+2D. https://docs.google.com/drawings/d/1n_HUxweaknAF5YEwXf-8vnfUesHdTB-Y750CszYdGYg/edit
+I finish dawing the tiles in the scene and taged the background sets.
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 

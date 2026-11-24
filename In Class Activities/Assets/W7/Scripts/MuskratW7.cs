@@ -71,7 +71,23 @@ public class MuskratW7 : MonoBehaviour
         //      the Muskrat.
         // The Muskrat should never play the "flying" animation while on a
         //      bubble.
+         if(Mathf.Abs( _rigidbody.linearVelocity.y)>0.2f)
+        {
+            _animator.SetBool("flying",true);
+        }
+        else
+        {
+            _animator.SetBool("flying",false);
+        }
 
+        if(Mathf.Abs( _rigidbody.linearVelocity.x)>0f)
+        {
+            _animator.SetBool("running",true);
+        }
+        else
+        {
+            _animator.SetBool("running",false);
+        }
 
         // STEP 5 -------------------------------------------------------------
     }
@@ -116,8 +132,23 @@ public class MuskratW7 : MonoBehaviour
         // Use _rigidbody.linearVelocity.
         // You may also find the absolute value method, Mathf.Abs(), helpful:
         //      https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Mathf.Abs.html
+        if(Mathf.Abs( _rigidbody.linearVelocity.y)>0.2f)
+        {
+            _animator.SetBool("flying",true);
+        }
+        else
+        {
+            _animator.SetBool("flying",false);
+        }
 
-        
+        if(Mathf.Abs( _rigidbody.linearVelocity.x)>0f)
+        {
+            _animator.SetBool("running",true);
+        }
+        else
+        {
+            _animator.SetBool("running",false);
+        }
         // STEP 4 -------------------------------------------------------------
     }
 
